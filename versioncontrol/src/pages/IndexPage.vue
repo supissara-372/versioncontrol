@@ -20,6 +20,7 @@
         type="number"
         v-model="age"
         HEAD
+        HEAD
         label="อายุ"
         lazy-rules
         :rules="[
@@ -32,7 +33,14 @@
           val => val !== null && val !== '' || 'กรุณาใส่อายุ',
           val => val > 0 && val < 100 || 'กรุณาใส่อายุจริง'
           git add versioncontrol/src/pages/IndexPage.vue
-thai-lang
+          thai-lang
+
+        label="อายุ *"
+        lazy-rules
+        :rules="[
+          val => val !== null && val !== '' || 'กรุณาใส่อายุ',
+          val => val > 0 && val < 100 || 'กรุณาใส่อายุจริง'
+           thai-lang
         ]"
       />
 
